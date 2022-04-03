@@ -376,7 +376,7 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
+              padding: 10,
               borderRadius: 0,
             }}
           >
@@ -391,16 +391,25 @@ function App() {
               By owning an NFT, you become the official owner of its corresponding date.
               Each photo is framed by a colour that is randomly extracted from the photo.
               <br/><br/>
-              The 1st minted NFT will cost a minimum of 0.005 ETH. For each following mint, the buyer must choose a higher price than the previously sold NFT. 
-              Thus, the value of the collection will be defined by buyers’ strategies. 
-              For the secondary market, the owner will determine his own sale price.
+              The collector decides on the price at which he values the mint.
+              However, there are two rules : 
+              <br/>- the 1st minted NFT costs a minimum of 0.005 ETH. 
+              <br/>- for each following mint, the collector must choose a higher price than the previously minted NFT (the increase may be small or large). 
+              <br/>Thus, the value of the collection will be defined by collectors’ strategies. 
+              
               <br/><br/>
               The collection is called "the Nash suns" in tribute to John Nash and his contributions to game theory. 
-              The buyer will face the Collector's Dilemma. He will have different choices :
+              The collector will face the Collector's Dilemma. He will have different choices :
               <br/>- increase the price slightly and hope that the floor price will be raised sharply by others
               <br/>- or raise the price heavily to directly impact future sales. But will other collectors want to follow? 
+              
             </s.TextDescription>
             <s.SpacerMedium />
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--accent-text)" }}
+            >
+              How far do you want this collection to go ? You act.
+            </s.TextDescription>
             
             
             {blockchain.account === "" ||
@@ -527,6 +536,16 @@ function App() {
 
 
                 <s.SpacerMedium />
+                <s.Container ai={"center"} jc={"center"} fd={"row"}> 
+                <s.TextDescription
+                  style={{
+                    textAlign: "center",
+                    color: "var(--accent-text)",
+                  }}
+                >
+                  By minting you will impact the Collectors' Curve forever.
+                </s.TextDescription> 
+                </s.Container>
 
                 <s.Container ai={"center"} jc={"center"} fd={"row"}>
                 <Plot
@@ -568,7 +587,7 @@ function App() {
                     color: "var(--accent-text)",
                   }}
                 >
-                  Figure : {figTitle}
+                  The Collectors' Curve : {figTitle}
                 </s.TextDescription> 
                 </s.Container>
                 </s.Container>
@@ -582,15 +601,17 @@ function App() {
             <s.SpacerMedium />
             <s.SpacerMedium />
             <s.TextDescription
-              style={{ textAlign: "center", color: "var(--accent-text)", fontSize:"14px" }}
+              style={{ textAlign: "justify", color: "var(--accent-text)", fontSize:"14px" }}
             >
+              I'm <StyledLink target={"_blank"} href="https://twitter.com/YEUYEUH"> Yeuyeuh</StyledLink>, a data scientist who turns into a web3 impressionist. 
+              This collection is my first web3 project, and I will be here for a while to create other underground projects.
             Collectors can share their suns and discuss their purchasing strategies on  
             <StyledLink target={"_blank"} href="https://discord.gg/h56KcSwN"> Discord</StyledLink>.
             The smart contract can be read on 
             <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}> Etherscan</StyledLink>.
             
-            <StyledLink target={"_blank"} href="https://twitter.com/YEUYEUH"> Twitter account</StyledLink> of the web3 artist.
-            NFTs already minted can be seen on <StyledLink target={"_blank"} href="https://opensea.io/"> OpenSea</StyledLink>.
+            NFTs already minted can be seen on <StyledLink target={"_blank"} href="https://opensea.io/collection/thenashsun"> OpenSea</StyledLink>.
+            For the secondary market, the owner will determine his own sale price.
             
             One last thing : Remember not to fly too close to the sun.
               
