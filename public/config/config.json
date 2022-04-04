@@ -2,9 +2,9 @@
   "CONTRACT_ADDRESS": "0xb4f2a8b4e3c9901230de608386f687bdc1f8e58d",
   "SCAN_LINK": "https://etherscan.io/address/0xb4f2a8b4e3c9901230de608386f687bdc1f8e58d",
   "NETWORK": {
-    "NAME": "Ethereum",
-    "SYMBOL": "ETH",
-    "ID": 1
+      "NAME": "Ethereum",
+      "SYMBOL": "ETH",
+      "ID": 1
   },
   "NFT_NAME": "the Nash suns",
   "SYMBOL": "NASH",

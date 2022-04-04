@@ -339,6 +339,9 @@ function App() {
   let plotColor = '#c43e00'
   
   price_array[price_array.length-1]=nft_value;
+  if(price_array[price_array.length-1]<price_array[price_array.length-2]){
+    price_array[price_array.length-1]=price_array[price_array.length-2]
+  }
 
   const buyEnable_b = claimingNft || isTooLow;
 
