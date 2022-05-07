@@ -354,6 +354,14 @@ function App() {
 
   }
 
+  //plot for twitter (need to remove)
+  const twitter = true;
+  if(twitter){
+    price_array.pop();
+    figTitle = `Evolution of the prices for the NFTs already minted`;
+  }
+
+
   const B = (props) => <s.TextDescription style={{fontWeight: 'bold'}}>{props.children}</s.TextDescription>
 
   return (
@@ -366,12 +374,12 @@ function App() {
       >
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1}  ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/20200608.png"} />
-            <s.TextDate > 08/06/2020 </s.TextDate> 
-            <StyledImg alt={"example"} src={"/config/images/20190823.png"} />
-            <s.TextDate> 23/08/2019 </s.TextDate> 
-            <StyledImg alt={"example"} src={"/config/images/20210323.png"} />
-            <s.TextDate> 23/03/2021 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/1.png"} />
+            <s.TextDate > #1 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/45.png"} />
+            <s.TextDate> #45 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/87.png"} />
+            <s.TextDate> #87 </s.TextDate> 
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -389,10 +397,9 @@ function App() {
               style={{ textAlign: "justify", color: "var(--accent-text)" }}
             >
               
-              This collection consists of 250 unique photos of sunsets taken from the same location but on different days. 
-              Each NFT corresponds to a unique date and is named after that date. 
-              By owning an NFT, you become the official owner of its corresponding date.
-              Each photo is framed by a colour that is randomly extracted from the photo.
+              This collection consists of 250 unique Nash suns. 
+              Each NFT is manually signed by the artist.
+              By owning an NFT, you become the official owner of a Nash sun.
               <br/><br/>
               The collector decides on the price at which he values the mint.
               However, there are two rules : 
@@ -624,12 +631,12 @@ function App() {
           
           <s.Container flex={1} ai={"center"}>
             
-            <StyledImg alt={"example"} src={"/config/images/20220209.png"} />
-            <s.TextDate> 09/02/2022 </s.TextDate> 
-            <StyledImg alt={"example"} src={"/config/images/20210325.png"} />
-            <s.TextDate> 25/03/2021 </s.TextDate> 
-            <StyledImg alt={"example"} src={"/config/images/20181110.png"} />
-            <s.TextDate> 10/11/2018 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/123.png"} />
+            <s.TextDate> #123 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/158.png"} />
+            <s.TextDate> #158 </s.TextDate> 
+            <StyledImg alt={"example"} src={"/config/images/173.png"} />
+            <s.TextDate> #173 </s.TextDate> 
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
