@@ -355,7 +355,7 @@ function App() {
   }
 
   //plot for twitter (need to remove)
-  const twitter = true;
+  const twitter = false;
   if(twitter){
     price_array.pop();
     figTitle = `Evolution of the prices for the NFTs already minted`;
